@@ -1,0 +1,9 @@
+{
+  "widget":
+  	{
+      "header": {"script": "<div class=\"img-wrapper\"><div id=\"image2\"><img src=\"https://lintvwotv.files.wordpress.com/2018/02/roses-flowers-valentines-day_1517879321399_340223_ver1-0_33247436_ver1-0_640_360.jpg\" height =\"285px\"><div id=\"image1\" class=\"h-slant-gray\"><div class=\"h-slant-orange\"></div></div><div id=\"image1\">hello</div></div></div>",
+      			"rectangle": "<svg><rect x=\"0\" y=\"0\" width=\"50\" height=\"50\"/></svg>"
+	}, 
+      "paragraph": {"script": "<p></p>"}
+    }
+}

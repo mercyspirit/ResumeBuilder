@@ -1,0 +1,41 @@
+{
+  "resume": {
+  	"basicInfo": {
+  		"firstName": "",
+    	"lastName": "",
+    	"email": "",
+    	"number": 0,
+      "addressLine1": "",
+      "addressLine2": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "pictureFile": ""
+  	},
+  	"socialMedia": {
+    	"gitHub": "",
+    	"website": "", 
+    	"facebook": "",
+    	"twitter": "",
+    	"linkedIn": ""},
+  	"skills": {
+    	"programmingLanguages": {},
+    	"languages": {}},
+    "education": {
+      "school": "",
+      "major": "",
+      "minor": "",
+    	"graduationDate": "",
+    	"gpa": 0,
+    	"coursework": []},
+    "experience": {
+      "jobTitle": "",
+      "dateStart": "",
+      "dateEnd": "",
+      "bullets": []
+      },
+    "portfolio": {
+      "links": []
+    }
+	}
+}

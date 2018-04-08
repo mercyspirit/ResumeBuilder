@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Resume Site Builder</title>
+  
+  	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    	
+    	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<style>
+						.sortable .row {
+  				background-color: rgb(59, 56, 56);
+  				box-shadow: 0px 2px 3px rgba(0,0,0,.13),
+ 							1px 2px 2px rgba(0,0,0,.3),
+              				-1px -2px 2px rgba(0,0,0,.05);
+            	margin: 50px auto 30px auto;
+        		min-width: 800px;
+    			max-width: 800px;
+        	}
+        
+        	@media only screen and (min-width: 800px) {
+         		.headerCanvas {
+          			margin: 50px 60px 30px 60px;
+            		min-width: 800px;
+    				max-width: 800px;
+          		}
+        	}
+        
+			.headerCanvas {
+        		background-color: rgb(59, 56, 56);
+        		height: 285px;
+            	border: none;
+            	margin: 50px auto 30px auto;
+            	box-shadow: 0px 2px 3px rgba(0,0,0,.13),
+  			  				1px 2px 2px rgba(0,0,0,.3),
+              				-1px -2px 2px rgba(0,0,0,.05);
+        		min-width: 800px;
+    			max-width: 800px;
+			}
+        
+        	.h-slant-gray { 
+    			position: static; 
+    			height: 285px; 
+   		 		width: 150px; 
+    			background-color: rgb(59, 56, 56);
+    			transform: skew(-17deg); 
+    			margin-right: 185px;
+            	float: right;   
+			}
+        
+        	.h-slant-orange { 
+    			position: static; 
+    			height: 285px; 
+   		 		width: 35px; 
+    			background-color: rgb(255, 101, 1);
+            	margin-right: 140px;
+            	float: right;
+            	box-shadow: 0px 2px 3px rgba(0,0,0,.13),
+  			  				1px 2px 2px rgba(0,0,0,.3),
+              				-1px -2px 2px rgba(0,0,0,.05);  
+			}
+        
+	  		.ui-widget-header p, .ui-widget-content p {
+	        	margin: 0;
+	        }
+			.sortable p {
+	  			height: 30px;
+	            padding: 10px;
+			}
+		
+			#editor {
+				background-color: rgb(38, 28, 29);
+				border: 2px solid transparent;
+			}
+        
+			#imageUpload {
+				display: none;
+			}
+
+			#profileImage {
+			cursor: pointer;
+			}
+		
+			.img-wrapper {
+				width: 550px;
+				position:  absolute;
+				overflow: hidden;   
+			}
+
+			#image1 {  
+				position: absolute;
+				top: 0;
+				left: 450px;
+	 		}
+	 
+	 		#image2 img {
+				position: relative;
+				width: 100%;
+	 		}
+            
+            #name {
+              color: white;
+              font-family: Trebuchet MS;
+              font-size: 30px;
+              font-weight: bold;
+              text-shadow: 2px 4px 3px rgba(0,0,0,0.2);
+              position: absolute;
+              top: 40px;
+              left: 520px;
+              width: 250px;
+            }
+            
+            #profession {
+              color: white;
+              font-family: Trebuchet MS;
+              font-size: 18px;
+              font-weight: bold;
+              text-shadow: 2px 4px 3px rgba(0,0,0,0.2);
+              position: absolute;
+              top: 75px;
+              left: 520px;
+              width: 250px;
+            }
+            
+            [contenteditable]:focus {
+    			outline: 0px solid transparent;
+                
+			}
+            
+            [contenteditable]:hover {
+    			background: rgba(255,255,255,0.1);
+                z-index = -1;
+			}
+            
+            [contenteditable] {
+    			text-align: right;
+                padding-right: 15px;
+                border-radius: 7px;
+			}
+            
+            body {
+				background-color: rgb(38, 28, 29);
+                z-index = 0;
+			}
+		</style>
+  
+  
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+		$( function() {
+			$('.sortable').sortable({
+		  		placeholder: "ui-state-highlight",
+		  		connectWith: ".sortable"
+			});
+
+			$('.psortable').sortable({
+				placeholder: "ui-state-highlight",
+				connectWith: ".psortable"
+			});
+			
+		    $( "#header" ).draggable({ grid: [ 10, 10 ] });
+
+		  	});
+		</script>
+
+</head>
+
+
+<body>
+	<input type="checkbox" id="tabMenu-toggle">
+		<label for="tabMenu-toggle" class="tabMenu-icon">&#9776;</label>
+
+		<nav class="tabMenu">
+			<ul>
+				<li><a href="#">EXPERIENCE</a></li>
+				<li><a href="#">EDUCATION</a></li>
+				<li><a href="#">PORTFOLIO</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</nav>
+
+		<div id="header" class="header ui-widget-content">
+			<div class="img-wrapper">
+		  		<div id="image2">
+		        	<img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/30442715_1904256122960591_745787342572224512_n.jpg?_nc_cat=0&oh=450e65c16f58ece012f4f57b4092a884&oe=5B752BA8" height ="285px">
+		  			<div id="image1" class="h-slant-gray">
+		    			<div class="h-slant-orange">
+		         
+		    			</div>
+		   			</div>
+		          
+		         	<div id="name">
+    			<p contenteditable="true" spellcheck="false">NAME</p>
+        	</div>
+            <div id="profession">
+    			<p contenteditable="true" spellcheck="false">Profession</p>
+        	</div>	
+				</div>
+		   	</div>
+		</div>
+
+		<div id="editor" class="sortable">
+			<div class="psortable row">
+    	{{{body}}}
+    </div>
+</body>
+</html>
